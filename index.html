@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Music</title>
+    <title>Menú Desplegable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpeg" type="image/jpeg">
+
+    <head>
+        <script src="payment.js"></script>
+        <body>
+            
+        </body>
+    </head>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Descargar aplicación</a></li>
+                    <li>
+                        <a href="#">Tarifas</a>
+                        <ul class="menu-vertical">
+                            <li><a href="#">Plan gratis</a></li>
+                            <li><a href="#">Plan intermedio</a></li>
+                            <li><a href="#">Plan premium</a></li>
+                            <li><a href="#">Plan Familiar</a></li>
+                            <li><a href="#">Plan Estudiantil</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cambio de idioma</a>
+                        <ul class="menu-vertical">
+                            <li><a href="#" data-lang="es">Español</a></li>
+                            <li><a href="#" data-lang="en">English</a></li>
+                            <li><a href="#" data-lang="de">Alemán</a></li>
+                            <li><a href="#" data-lang="fr">Français</a></li>
+                            <li><a href="#" data-lang="jp">日本語</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Ayuda</a>
+                        <ul class="menu-vertical">
+                            <li><a href="#">¿Cómo podemos ayudarte?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Registrarse</a></li>
+                    <li><a href="#">iniciar sesion</a></li>
+                </ul>    
+            </nav>
+        </header>
+        <section class="featured-image">
+            <img src="HARMONY MUSIC.png" alt="imagen">
+        </section>
+
+        <div class="info-section">
+            <h2>Explora un Mundo de Música</h2>
+            <p>
+                En <strong>Harmony Music</strong>, nos dedicamos a ofrecerte una experiencia única al escuchar tu música favorita. Con una amplia variedad de géneros y playlists personalizadas, cada sesión es un viaje emocionante a través de sonidos nuevos y clásicos.
+            </p>
+        
+            <p>
+                Nuestra plataforma está diseñada para que encuentres fácilmente las canciones que amas y descubras otras que se convertirán en tus nuevas favoritas. Disfruta de una interfaz intuitiva y elegante que eleva tu experiencia musical a otro nivel.
+            </p>
+            <h2 data-translate="explore-music">Explora un Mundo de Música</h2>
+<p data-translate="intro-text">
+    En <strong>Harmony Music</strong>, nos dedicamos a ofrecerte una experiencia única al escuchar tu música favorita...
+</p>
+        </div>
+        
+        <div class="premium-section">
+            <h2>Nuestras Funciones Premium</h2>
+            <p>
+                Al convertirte en un usuario premium, tendrás acceso a funcionalidades exclusivas, como la capacidad de crear playlists ilimitadas, escuchar música sin anuncios, y disfrutar de audio en calidad Hi-Fi. Además, tendrás acceso anticipado a nuevos lanzamientos y playlists seleccionadas por expertos.
+            </p>
+        </div>
+        
+        <div class="community-section">
+            <h2>Conecta con una Comunidad Global</h2>
+            <p>
+                No solo se trata de escuchar música; en Harmony Music, también puedes conectar con una comunidad global de amantes de la música. Comparte tus playlists, sigue a tus artistas favoritos y descubre lo que otros están escuchando en tiempo real.
+            </p>
+        
+            <p>
+                Únete a Harmony Music hoy y descubre cómo cada canción puede contar una historia y crear emociones únicas. ¡La música nunca ha sido tan cercana!
+            </p>
+        </div>
+       
+
+        <div class="pricing-container">
+            <div class="pricing-card free">
+                <h3>Plan Gratuito</h3>
+                <p class="price">Gratis</p>
+                <ul>
+                    <li>Calidad de sonido estándar (MP3, 160 kbps)</li>
+                    <li>Reproducción con anuncios</li>
+                    <li>Acceso limitado a playlists y mixes</li>
+                    <li>Reproducción en un dispositivo a la vez</li>
+                    <li>No permite descargas offline</li>
+                </ul>
+                <button class="btn-pago" onclick="redirigirPago('Plan gratis')">Elige este plan </button>
+            </div>
+        
+            <div class="pricing-card basic">
+                <h3>Plan Básico</h3>
+                <p class="price">$10/mes</p>
+                <ul>
+                    <li>Calidad de sonido estándar (MP3, 320 kbps)</li>
+                    <li>Reproducción sin anuncios</li>
+                    <li>Acceso a playlists básicas</li>
+                    <li>Reproducción en un dispositivo a la vez</li>
+                    <li>Descargas limitadas (hasta 100 canciones offline)</li>
+                    <li>Recomendaciones personalizadas básicas</li>
+                </ul>
+                <button class="btn-pago" onclick="redirigirPago('Plan Básico')">Elige este plan </button>
+            </div>
+        
+            <div class="pricing-card intermedio">
+                <h3>Plan Intermedio</h3>
+                <p class="price">$20/mes</p>
+                <ul>
+                    <li>Calidad de sonido alta (FLAC, ALAC)</li>
+                    <li>Reproducción sin anuncios</li>
+                    <li>Acceso a playlists y mixes personalizados</li>
+                    <li>Reproducción en hasta 3 dispositivos</li>
+                    <li>Descargas moderadas (hasta 500 canciones offline)</li>
+                    <li>Recomendaciones personalizadas avanzadas</li>
+                    <li>Acceso a contenido exclusivo (lanzamientos, entrevistas)</li>
+                </ul>
+                <button class="btn-pago" onclick="redirigirPago('Plan intermedio')">Elige este plan</button>
+            </div>
+        
+            <div class="pricing-card premium">
+                <h3>Plan Premium</h3>
+                <p class="price">$100/al año</p>
+                <ul>
+                    <li>Calidad de sonido ultra (Hi-Res, Dolby Atmos)</li>
+                    <li>Reproducción sin anuncios</li>
+                    <li>Acceso a playlists y mixes personalizados</li>
+                    <li>Reproducción en hasta 10 dispositivos</li>
+                    <li>Descargas ilimitadas</li>
+                    <li>Recomendaciones ultra personalizadas</li>
+                    <li>Acceso prioritario a contenido exclusivo</li>
+                    <li>Funciones avanzadas (ecualizador, crossfade, letras)</li>
+                    <li>Soporte VIP (atención preferencial)</li>
+                </ul>
+                <button class="btn-pago" onclick="redirigirPago('Plan premium')">Elige este plan</button>
+            </div>
+        
+            <div class="pricing-card familiar">
+                <h3>Plan Familiar</h3>
+                <p class="price">$25/mes</p>
+                <ul>
+                    <li>Todas las características del Plan Intermedio</li>
+                    <li>Hasta 6 cuentas individuales</li>
+                    <li>Reproducción en múltiples dispositivos simultáneamente</li>
+                    <li>Gestión de cuentas familiares y controles parentales</li>
+                </ul>
+                <button class="btn-pago" onclick="redirigirPago('Plan familiar')">Elige este plan</button>
+            </div>
+        
+            <div class="pricing-card estudiantil">
+                <h3>Plan Estudiantil</h3>
+                <p class="price">$5/mes</p>
+                <ul>
+                    <li>Todas las características del Plan Básico</li>
+                    <li>Descuento significativo para estudiantes</li>
+                    <li>Requiere verificación de estado de estudiante</li>
+                </ul>
+                <button class="btn-pago" onclick="redirigirPago('Plan estudiantil')">Elige este plan</button>
+            </div>
+            <script>
+                 // Captura el parámetro 'plan' de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const plan = urlParams.get('plan');
+
+        if (plan) {
+            document.getElementById("plan-seleccionado").textContent = `Plan seleccionado: ${plan}`;
+        } else {
+            document.getElementById("plan-seleccionado").textContent = "No se seleccionó ningún plan.";
+        } 
+                    
+            </script> 
+        </div>
+        <script src="https://www.google.com"></script>
+          <script src="script.js"></script> 
+
+                </body>
+                </html>

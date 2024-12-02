@@ -1,0 +1,408 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #001f3f;
+    padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    max-width: 900px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu > li:hover {
+    background-color: #0077b6;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none; /* Oculto por defecto */
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+    padding: 0;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.menu-vertical li:hover {
+    background-color: black;
+}
+
+
+
+.featured-image img {
+    margin: 0;
+    width: 100%; /* Ajusta el ancho según lo que prefieras */
+    height: 460px; /* Le das una altura fija para hacerla más horizontal */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro de su contenedor */
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto; /* Asegura que la imagen mantenga su proporción */
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el ancho */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente detrás del texto */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.pricing-card {
+    background-color: #292929;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+ 
+    .pricing-container {
+        flex-direction: column; /* Cambia el diseño de las tarjetas a una sola columna */
+    }
+
+    .pricing-card {
+        width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+    }
+}
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e6f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.subscription-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.plan-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* Estilos generales */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Sección de información */
+.info-section, .features-section, .community-section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Encabezados */
+h2 {
+    font-size: 28px;
+    color: #0077b6;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo de párrafos */
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Resaltar texto importante */
+strong {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+/* Estilos adicionales para premium */
+.premium-section {
+    background-color: #001f3f;
+    color: #f1f1f1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.premium-section h2 {
+    color: #00b4d8;
+}
+
+.premium-section p {
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.pricing-card {
+    background-color: #292929;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #ff6f61; /* Color del título principal */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #ff6f61; /* Botón de llamada a la acción */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #ff4f41;
+}
+
+.free h3 {
+    color: #8bc34a; /* Color especial para plan gratuito */
+}
+
+.basic h3 {
+    color: #ffb3b3; /* Color especial para plan básico */
+}
+
+.intermedio h3 {
+    color: #b39ddb; /* Color especial para plan intermedio */
+}
+
+.premium h3 {
+    color: #ffeb3b; /* Color especial para plan premium */
+}
+
+.familiar h3 {
+    color: #ff9800; /* Color especial para plan familiar */
+}
+
+.estudiantil h3 {
+    color: #64b5f6; /* Color especial para plan estudiantil */
+}
+
+
+
+
+
+
+
+.plan {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.btn-pago {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-pago:hover {
+    background-color: #ff4f41;
+
+}
+
+
+
+
+
+
+
+
